@@ -1,0 +1,11 @@
+html, body {
+  font-family: 'Emilys Candy', sans-serif;
+  height: 100%;
+}
+
+.bg {
+  background-image: url("https://source.unsplash.com/collection/1227291/1600x900");
+  background-size: cover;
+  /* the specific height */
+  height: 100%;
+}
