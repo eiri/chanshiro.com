@@ -1,11 +1,28 @@
+@font-face {
+    /* http://wakufactory.jp/densho/font/hentai/ */
+    src: url('UniHentaiKana-Regular.woff');
+    font-family: HentaiKana;
+}
+
 html, body {
-  font-family: 'Emilys Candy', sans-serif;
+  font-family: 'HentaiKana', serif;
   height: 100%;
 }
 
+.upright {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
 .bg {
-  background-image: url("https://source.unsplash.com/collection/1227291/1600x900");
+  /* Photo by Eunice Lui https://www.pexels.com/@exnl */
+  background-image: url("/eunice-lui-928211.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   /* the specific height */
   height: 100%;
 }
