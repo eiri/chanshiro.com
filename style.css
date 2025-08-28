@@ -1,28 +1,52 @@
 @font-face {
     /* http://wakufactory.jp/densho/font/hentai/ */
-    src: url('UniHentaiKana-Regular.woff');
-    font-family: HentaiKana;
+    src: url("/UniHentaiKana-Regular.woff") format("woff");
+    /* https://github.com/VistuBin/hentaigana-sans */
+    /*src: url("hentaigana-sans-Light.ttf") format("truetype");*/
+    font-family: "HentaiKana";
+    font-weight: 100;
+    font-style: normal;
 }
 
-html, body {
-  font-family: 'HentaiKana', serif;
-  height: 100%;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
-.upright {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  position: absolute;
-  top: 5%;
-  left: 5%;
+section {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("eunice-lui-928211.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.bg {
-  /* Photo by Eunice Lui https://www.pexels.com/@exnl */
-  background-image: url("/eunice-lui-928211.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* the specific height */
-  height: 100%;
+section div {
+    padding-left: 5vw;
+    padding-top: 5vh;
+    font-family: "HentaiKana", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    line-height: 1.5;
+    font-size: 1.875rem;
+}
+
+/* Medium screens ≥768px */
+@media (min-width: 768px) {
+    section div {
+        font-size: 2.25rem;
+    }
+}
+
+/* Large screens ≥1024px */
+@media (min-width: 1024px) {
+    section div {
+        font-size: 3rem;
+    }
 }
