@@ -1,6 +1,6 @@
 @font-face {
     /* http://wakufactory.jp/densho/font/hentai/ */
-    src: url("/UniHentaiKana-Regular.woff") format("woff");
+    src: url("UniHentaiKana-Regular.woff") format("woff");
     /* https://github.com/VistuBin/hentaigana-sans */
     /*src: url("hentaigana-sans-Light.ttf") format("truetype");*/
     font-family: "HentaiKana";
@@ -34,6 +34,7 @@ section div {
     writing-mode: vertical-rl;
     text-orientation: upright;
     line-height: 1.5;
+    letter-spacing: 0.3em;
     font-size: 1.875rem;
 }
 
