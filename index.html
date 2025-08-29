@@ -5,29 +5,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" type="image/icon" href="favicon.ico" />
+        <script src="https://cdn.jsdelivr.net/npm/opentype.js"></script>
         <link rel="stylesheet" href="style.css" />
-        <script src="hentaigana.js"></script>
     </head>
     <body>
         <section>
-            <div></div>
+            <div>
+                <svg></svg>
+            </div>
         </section>
-        <script>
-            // O snail,
-            // Climb Mount Fuji,
-            // But slowly, slowly
-            //
-            // katatsumuri
-            // sorosoro nobore
-            // fuji no yama
-            const modernText = `かたつむり
-そろそろのぼれ
-ふじのやま`;
-            const hentaiganaText = convertToHentaigana(modernText);
-            const targetDiv = document.querySelector(
-                "section > div:first-of-type",
-            );
-            targetDiv.innerHTML = hentaiganaText.replace(/\n/g, "<br>");
-        </script>
+        <script type="module" src="hentaigana.js"></script>
     </body>
 </html>

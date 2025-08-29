@@ -25,29 +25,23 @@ section {
     background-position: center;
 }
 
-section div {
-    padding-left: 5vw;
-    padding-top: 5vh;
-    font-family: "HentaiKana", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    line-height: 1.5;
-    letter-spacing: 0.3em;
-    font-size: 1.875rem;
+div {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
 }
 
-/* Medium screens ≥768px */
-@media (min-width: 768px) {
-    section div {
-        font-size: 2.25rem;
+svg {
+    width: 20vw;
+    height: auto;
+    display: block;
+}
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 1000;
     }
-}
-
-/* Large screens ≥1024px */
-@media (min-width: 1024px) {
-    section div {
-        font-size: 3rem;
+    to {
+        stroke-dashoffset: 0;
     }
 }
